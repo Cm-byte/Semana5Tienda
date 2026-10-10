@@ -1,0 +1,36 @@
+.shell {
+  display: grid;
+  grid-template-columns: 248px 1fr;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 28px 28px 16px;
+}
+
+.footer {
+  padding: 18px 28px 26px;
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* Media query: posible en CSS Modules, imposible con estilos inline */
+@media (max-width: 900px) {
+  .shell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .main {
+    padding: 20px 16px 12px;
+  }
+}

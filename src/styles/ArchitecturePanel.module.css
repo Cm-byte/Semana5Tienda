@@ -1,0 +1,110 @@
+.panel {
+  position: relative;
+  background: var(--surface);
+  border: 1.5px dashed var(--module);
+  border-radius: var(--radius);
+  padding: 26px 22px 22px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 2px 0 16px;
+}
+
+.tree,
+.branch {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.branch {
+  margin-left: 18px;
+  padding-left: 14px;
+  border-left: 2px solid var(--border);
+}
+
+.node {
+  margin: 6px 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.name {
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.role {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 1px 7px;
+  border-radius: 999px;
+}
+
+.tagModule {
+  background: var(--module);
+}
+
+.tagInline {
+  background: var(--inline);
+}
+
+.flow {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.flowItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.step {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.arrow {
+  color: var(--accent);
+}
+
+.flowLabel {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.note {
+  margin-top: 12px;
+  font-size: 0.75rem;
+  color: var(--muted);
+}

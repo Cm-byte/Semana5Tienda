@@ -1,0 +1,101 @@
+/* Mismo nombre .title que en Dashboard.module.css: CSS Modules evita la colisión */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+/* Pseudo-clases: posibles en CSS Modules, imposibles con estilos inline */
+.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 24px rgba(28, 25, 23, 0.08);
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.iconBox {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.good {
+  color: var(--success);
+  background: var(--success-soft);
+}
+
+.bad {
+  color: var(--danger);
+  background: var(--danger-soft);
+}
+
+.title {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.value {
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.description {
+  font-size: 0.74rem;
+  color: var(--muted);
+}
+
+.extra {
+  margin-top: 6px;
+  padding: 6px 9px;
+  border-radius: 8px;
+  background: var(--accent-soft);
+  color: #7c3a24;
+  font-size: 0.74rem;
+}
+
+.cta {
+  margin-top: auto;
+  padding-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.card:hover .cta {
+  text-decoration: underline;
+}

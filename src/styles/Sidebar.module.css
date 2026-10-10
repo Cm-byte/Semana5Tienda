@@ -1,0 +1,102 @@
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 26px 18px;
+  background: var(--ink);
+  color: #e7e5e4;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 6px;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.tagline {
+  font-size: 0.75rem;
+  color: #a8a29e;
+}
+
+.nav {
+  display: grid;
+  gap: 4px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #d6d3d1;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.link:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+}
+
+.active {
+  background: rgba(168, 85, 58, 0.22);
+  color: #fff;
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.badge {
+  margin-top: auto;
+  padding: 8px 10px;
+  border: 1px dashed #6d28d9;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  color: #c4b5fd;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    position: static;
+    height: auto;
+    gap: 14px;
+    padding: 16px;
+  }
+  .nav {
+    grid-auto-flow: column;
+    justify-content: start;
+    overflow-x: auto;
+    min-width: 0;
+  }
+  .link {
+    white-space: nowrap;
+  }
+  .badge {
+    display: none;
+  }
+}
